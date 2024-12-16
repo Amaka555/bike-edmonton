@@ -45,15 +45,56 @@ body {
 
 .flex-1 {
     flex: 1;
+    flex-basis: 100%;
+    margin-right: 20px;
 }
 
 .flex-2 {
-    flex: 2;
+    flex: 2;     
+    flex-basis: 100%;
+    margin-left: 20px;
 }
+
+.flex-3 {
+    flex: 3;
+    flex-basis: 100%;
+    margin: 20px;
+}
+
+.flex-11 {
+    flex: 1;
+    flex-basis: 100%;
+    margin-right: 20px;
+    width: 100px;
+}
+
+.flex-12 {
+    flex: 2;     
+    flex-basis: 100%;
+    margin-right: 20px;
+    width: 100px;
+    margin-left: 20px;
+
+}
+
+.flex-13 {
+    flex: 3;
+    flex-basis: 100%;
+    width: 100px;
+    margin-left: 20px;
+
+}
+
 
 .flex-items {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;     
+}
+
+.footer-nav1 {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 .align {
@@ -74,7 +115,7 @@ body {
     grid-column: 1 / span 5;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+
 }
 
 .container-right {
@@ -88,16 +129,24 @@ body {
     flex-wrap: wrap;
 }
 
+.padding-bottom-left {
+    padding-bottom: 40px;
+}
+
 /* Text Styles */
 
 h1 {
     color: black;
-    font-family: "EB Garamond";
-    font-size: 72px;
+    font-family: "roboto";
+    font-size: 40px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin: 0px 0px 16px 0px;
+}
+
+h1:hover {
+    color: rgba(207, 69, 32, 1);
 }
 
 h2 {
@@ -130,6 +179,16 @@ p {
     line-height: normal;
 }
 
+.p-footer {
+    color: white;
+}
+
+.link{
+    color: white;
+}
+.link:hover {
+    color: rgba(207, 69, 32, 1);
+}
 .p-bold {
     color: black;
     font-family: "Work Sans";
@@ -190,6 +249,25 @@ ul a {
     outline: none;
     border-style: solid;
     border-color: white;
+    border-radius: 15px;
+}
+
+.btn-dark1 {
+    background-color: rgba(207, 69, 32, 1);
+    padding: 16px;
+    height: 50px;
+    color: white;
+    font-family: "EB Garamond", roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    outline: none;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
 }
 
 .btn-dark:hover {
@@ -198,6 +276,14 @@ ul a {
     color: black;
     border-style: solid;
     border-color: white;
+}
+
+.btn-dark1:hover {
+    outline: 2px white;
+    background-color: white;
+    color: black;
+    border-style: solid;
+    border-color: black;
 }
 
 .btn-line {
@@ -252,12 +338,14 @@ ul a {
     display: block;
     padding: 12px 12px;
     border-style: none;
-    background-color: white;
+    background-color:rgba(207, 69, 32, 1) ;
     font-family: "Work Sans", sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    border-style: solid;
+    border-color: white;
 }
 
 
@@ -308,6 +396,11 @@ ul a {
     border-style: solid;
     border-color:white;
 }
+.line1{
+    width: 100%;
+    background-color:grey;
+
+}
 
 /* HERO */
 
@@ -321,6 +414,8 @@ ul a {
 
 .img-100 {
     width: 100%;
+    padding-bottom: 30px;
+
 }
 
 .subhead {
@@ -378,8 +473,38 @@ ul a {
     z-index: 1;
 }
 
+/* Donate section */
+
+.donate{
+    background-color: #242424;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.donate1 {
+    text-align: center;
+    margin: 80px;
+    color: white;
+}
 
 /* FOOTER */
+
+/* Footer1 Section */
+
+#footer-img {
+    background-image: url(../images/footer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative; 
+}
+
+.border1 {
+    border-left: solid;
+    border-color: white;
+    padding: 80px;
+}
 
 #footer-nav ul {
     padding: 0;
@@ -392,6 +517,17 @@ ul a {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    color: white;
+}
+
+#footer-nav li:hover {
+    color: rgba(207, 69, 32, 1);
+    padding-bottom: 4px;
+}
+
+.footer-div {
+    width: 100%;
+    background-color: rgba(0, 32, 91, 1);
 }
 
 .copyright {
@@ -414,6 +550,9 @@ ul a {
     margin-right: 5px;
 }
 
+.socials {
+    width: 140px;
+}
 
 /* -----MEDIA QUERIES----- */ 
 
