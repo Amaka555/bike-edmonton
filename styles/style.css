@@ -150,13 +150,14 @@ h1:hover {
 }
 
 h2 {
-    font-family: "EB Garamond";
-    font-size: 40px;
+    font-family: "roboto";
+    font-size: 25px;
     font-style: normal;
     font-weight: 400;
     line-height: 40px; /* 100% */
-    color: black;
+    color: white;
     margin: 0px 0px 24px 0px;
+    width: 90%;
 }
 
 .h2-reverse {
@@ -172,8 +173,8 @@ h2 {
 p {
     margin: 0px 0px 16px 0px;
     color: black;
-    font-family: "Work Sans";
-    font-size: 16px;
+    font-family: "roboto";
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -239,7 +240,7 @@ ul a {
     padding: 16px;
     height: 50px;
     color: white;
-    font-family: "EB Garamond", roboto;
+    font-family: "roboto";
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
@@ -257,7 +258,7 @@ ul a {
     padding: 16px;
     height: 50px;
     color: white;
-    font-family: "EB Garamond", roboto;
+    font-family: "roboto";
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
@@ -319,7 +320,7 @@ ul a {
     display: block;
     margin: 0px 0px 16px 0px;
     color: black;
-    font-family: "Work Sans";
+    font-family: "roboto";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -339,11 +340,20 @@ ul a {
     padding: 12px 12px;
     border-style: none;
     background-color:rgba(207, 69, 32, 1) ;
-    font-family: "Work Sans", sans-serif;
+    font-family: "roboto";
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    border-style: solid;
+    border-color: white;
+    border-radius: 15px;
+}
+
+.form-button:hover {
+    outline: 2px white;
+    background-color: white;
+    color: black;
     border-style: solid;
     border-color: white;
 }
@@ -353,7 +363,8 @@ ul a {
 
 
 #Bike-edmonton-logo {
-    width: 80px;
+    width: 100px;
+
 }
 
 #top-navi ul {
@@ -379,7 +390,7 @@ ul a {
 
 
 .all-caps {
-    font-family: "EB Garamond", roboto;
+    font-family: "roboto";
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
