@@ -584,7 +584,7 @@ ul a {
 
 @media screen and (max-width: 480px) {
     body {
-    background-color: lightblue;
+    background-color:;
     }
 
     .grid-2 {
@@ -680,7 +680,7 @@ ul a {
 
 @media screen and (max-width: 769px)and (min-width: 481px) {
 body {
-    background-color: plum;
+    background-color:;
     }
     .hidden-desktop {
         display: none;
@@ -691,7 +691,7 @@ body {
 
 @media screen and (max-width: 1440px) and (min-width: 1280px) {
      body {
-    background-color: lightpink;
+    background-color:;
     }
     
      .hidden-desktop {
@@ -703,7 +703,7 @@ body {
 
 @media screen and (max-width: 1279px) and (min-width: 769px) {
      body {
-        background-color: lightgreen;
+        background-color: ;
     }
 
     .hidden-desktop {
@@ -715,7 +715,7 @@ body {
 
 @media screen and (min-width: 1441px) {
      body {
-        background-color: lightcyan;
+        background-color: ;
  }
      .hidden-desktop {
         display: none;
