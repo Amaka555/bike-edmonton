@@ -132,6 +132,9 @@ body {
 .padding-bottom-left {
     padding-bottom: 40px;
 }
+.padding-bottom-left1 {
+    padding-bottom: 80px;
+}
 
 /* Text Styles */
 
@@ -168,6 +171,16 @@ h2 {
     font-weight: 400;
     line-height: normal;
     margin: 0px 0px 16px 0px;
+}
+
+h3 {
+    margin: 0px 0px 16px 0px;
+    color: black;
+    font-family: "roboto";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
 }
 
 p {
@@ -225,8 +238,8 @@ ul a {
 
 .graphic-text {
     color: rgba(0, 0, 0, 0.10);
-    font-family: "EB Garamond";
-    font-size: 80px;
+    font-family: "roboto";
+    font-size: 70px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -405,7 +418,7 @@ ul a {
     width: 100%;
     background-color: rgba(207, 69, 32, 1);
     border-style: solid;
-    border-color:white;
+    border-color:rgba(207, 69, 32, 1);
 }
 .line1{
     width: 100%;
