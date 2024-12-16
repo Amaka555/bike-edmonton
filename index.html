@@ -19,17 +19,17 @@
 
 <body style="background-color: white;"> 
     <!--Navigation-->
-    <header>
+    <header class="mobile-head">
    	<!-- DESKTOP NAV -->
-   	    <nav id="top-navi" class="flex-center">
-	   	    <div class="head-div padding-40">
+   	    <nav id="top-navi" class="flex-center hidden-mobile">
+	   	    <div class="head-div padding-40 hidden-mobile">
 	   	    	<div class="margin-default flex-center">
 	            <div ><a href="index.html"><img id="Bike-edmonton-logo" src="images/Bike-edmonton-logo.svg"> </a></div>
 	            <ul>
 	                <li class="all-caps"><a href="index.html">Home</a></li>
 	                <li class="all-caps"><a href="about.html">About</a></li>
 	                <li class="all-caps"><a href="#">Services</a></li>
-	                <li class="all-caps"><a href="#">Support</a></li>
+	                <li class="all-caps"><a href="volunteer.html">Support</a></li>
 	                <li class="all-caps"><a href="#">Contact</a></li>
 	                <li class="all-caps"><a href="#">Learn More</a></li>
 	            </ul>
@@ -37,27 +37,58 @@
 	            </div>
 	        </div>
         </nav>
-            <div class="line">  <h1></h1> </div>
-   </header>
+            <div class="line hidden-mobile">  <h1></h1> </div>
 
-   <!--hero-->
+    <!-- MOBILE NAV -->
+        <nav class="hidden-desktop mobile-nav mobile-head">
+                <div><a href="index.html"><img id="Bike-edmonton-logo" src="images/Bike-edmonton-logo.svg"> </a></div>
+
+                <div><a><img src="images/Vector.svg"></a></div>
+        </nav>
         <section>
+            <div class="line hidden-desktop">  <h1></h1> </div>
+        </section>
+
+   </header>
+   <!--Desktop hero-->
+        <section>
+        <section class="hidden-mobile">
         	<div>
                 <img src="images/Home-image.png" class="img-100" alt="two womem with their bikes looking at the Edmonton bridge">
         	</div>
         </section>
 
+         <!--Mobile hero section-->
+        <section class="hidden-desktop">
+            <div>
+                <img src="images/Home-image.png" class="mobile-width" alt="two womem with their bikes looking at the Edmonton bridge">
+        	</div>
+        </section>
+        </section>
+
+            
+
     <!--BODY BEGINS-->
 
-    <!--graphic text-->
+    <!--Desktop graphic text-->
+        <section>
         <section class="hidden-mobile">
             <div class="graphic-text-wrap padding-40"> 
                 <p class="graphic-text margin-default">Our Vision is a city where Cycling is safe</p>
             </div>
         </section>
 
-    <!--Body text see shop -->
+    <!--mobile graphic-->
+        <section class="hidden-desktop">
+            <div class="mobile-graphic-text-wrap"> 
+                <p class="mobile-graphic-text">Our Vision is a city where cycling is safe</p>
+            </div>
+        </section>
+        </section>
+
+    <!--Desktop Body text see shop -->
         <section>
+        <section class="hidden-mobile">
             <div class="margin-default padding-40 flex-items">
             	<div class="flex-1">
             		<img src="images/body-image.png" class="img-100" alt="bunch of bike parts">
@@ -71,8 +102,25 @@
             </div>
         </section>
 
-    <!--Blog Posts Section-->
-        <section class="padding-bottom-left">
+    <!--Mobile Body text see shop -->
+        <section class="hidden-desktop mobile-hero">
+            <div class="margin-default padding-40">
+            	<div>
+            		<img src="images/body-image.png" class="img-100" alt="bunch of bike parts">
+            	</div>
+
+            	<div>
+            	<p>See our shop. We have many new and used parts, bikes, and accessories for sale. Selection varies between the downtown and south shops. You can check out our inventory of new parts and accessories below.</p>
+
+            	<button class="btn-dark1"><a>Shop</a></button>	
+            	</div>        	
+            </div>
+        </section>
+        </section>
+
+    <!--Desktop Blog Posts Section-->
+        <section>
+        <section class="padding-bottom-left hidden-mobile">
         	<div class="margin-default">
         		<h1>Blog Posts</h1>
         	</div>
@@ -94,8 +142,33 @@
         	</div>
         </section>
 
-    <!--Donate Section-->
-        <section class="donate">
+    <!--Mobile Blog Posts Section-->
+        <section class="hidden-desktop">
+        	<div class="margin-default">
+        		<h1>Blog Posts</h1>
+        	</div>
+        	<div class="margin-default padding-40 mobile-hero">
+        		<div>
+        			<img src="images/blog1.png" class="img-100" alt="People riding their bikes in the woods">
+        			<p>It has been a year of transition for Bike Edmonton...</p>
+        		</div>
+                   
+        		<div>
+        			<img src="images/blog2.png" class="img-100" alt="bikes in the woods">
+        			<p>The shop is consistently bustling with new arrivals...</p>
+        		</div>
+
+        		<div>
+        			<img src="images/blog3.png" class="img-100" alt="a picture of a bike">
+        			<p>Don’t miss out your chance to show...</p>
+        		</div>
+        	</div>
+        </section>
+        </section>
+
+    <!--Desktop Donate Section-->
+        <section>
+        <section class="donate hidden-mobile">
         	<div class="donate padding-default">
         		<h2 class="donate1 margin-default">
         		We have helped thousands of people find a bike to ride and learn to fix their bike. Your financial support makes it possible for us to keep doing this work!
@@ -105,56 +178,102 @@
         		<button class="btn-dark"><a href="donate.html">Donate</a></button>	
         	</div>
         </section>
+
+    <!--Mobile Donate Section-->
+        <section class="donate hidden-desktop">
+        	<div class="donate padding-default">
+        		<h2 class="donate1 margin-default padding-40">
+        		We have helped thousands of people find a bike to ride and learn to fix their bike. Your financial support makes it.
+        		</h2>
+
+        		<button class="btn-dark"><a href="donate.html">Donate</a></button>	
+        	</div>
+        </section>
+        </section>
      
-    <!--Footer section-->
+    <!-- Desktop Footer section-->
     <footer>
-    	<section id="footer-img">
-    		<div class="flex-items">
-    			<div class="margin-default flex-1 padding-80">
-    				<h2 class="p-footer">Sign up for our Newsletter</h2>
-    				<p class="p-footer">Sign up and register for our newsletter to get regular updates.</p>
-    				<form>
+        <section>
+        <section id="footer-img">
+            <div class="flex-items hidden-mobile">
+                <div class="margin-default flex-1 padding-80 hidden-mobile">
+                    <h2 class="p-footer">Sign up for our Newsletter</h2>
+                    <p class="p-footer">Sign up and register for our newsletter to get regular updates.</p>
+                    <form>
                     <label class="form-label reverse">Email</label>
                     <input type="text" name="Email" class="form-field">
                     <input type="submit" value="Submit" class="form-button">
                 </form>
-    			</div>
+                </div>
 
-    			<div class="margin-default flex-2 border1">
-    				<h2 class="p-footer">Membership</h2>
-    				<p class="p-footer">Bike Edmonton has over 1700 paid members. Join or renew today and be a part of the growing community in Edmonton! <a href="Volunteer.html" class="link">Click here</a></p>
-    			</div>
-    		</div>
-    		
-    	</section>
+                <div class="margin-default flex-2 border1">
+                    <h2 class="p-footer">Membership</h2>
+                    <p class="p-footer">Bike Edmonton has over 1700 paid members. Join or renew today and be a part of the growing community in Edmonton! <a href="Volunteer.html" class="link">Click here</a></p>
+                </div>
+            </div>
+            
+        </section>
 
     <!--Footer-Nav Section-->
-    	<section class="footer-div">
-    		<div class="padding-40 margin-default container">
+        <section class="footer-div hidden-mobile">
+            <div class="padding-40 margin-default container">
     <!--Footer-Nav-Left-->
-    			<div class="container-left">
-    				<div class="padding-bottom-left"><img src="images/Bike-edmonton-logo.svg"></div>
-    				<div><img class="socials"src="images/socials.svg"> </div>
-    			</div>
+                <div class="container-left">
+                    <div class="padding-bottom-left"><img src="images/Bike-edmonton-logo.svg"></div>
+                    <div><img class="socials"src="images/socials.svg"> </div>
+                </div>
 
     <!--Footer-Nav-Right-->
-                <div class="container-right">
-                	<nav id="footer-nav">
-	                    <ul class="footer-nav mobile-nav1">
-	                        <li><a href="index.html">Home</a></li>
-	                        <li><a href="about.html">About</a></li>
-	                        <li><a href="#">Services</a></li>
-	                        <li><a href="volunteer.html">Support</a></li>
-	                        <li><a href="#">Contact</a></li>
-	                        <li><a href="#">Learn More</a></li>
-	                    </ul>
+                <div class="container-right hidden-mobile">
+                    <nav id="footer-nav">
+                        <ul class="footer-nav mobile-nav1">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="volunteer.html">Support</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Learn More</a></li>
+                        </ul>
                     </nav>                
                 </div>
 
-    		</div>
-    		
-    	</section>
-        	
+            </div>
+            
+        </section>
+
+    <!--Mobile footer-->
+        <section id="footer-img">
+            <div class="mobile-hero">
+                <div class="margin-default flex-1 padding-40 hidden-desktop">
+                    <h2 class="p-footer">Sign up for our Newsletter</h2>
+                    <p class="p-footer">Sign up and register for our newsletter to get regular updates.</p>
+                    <form>
+                    <label class="form-label reverse">Email</label>
+                    <input type="text" name="Email" class="form-field">
+                    <input type="submit" value="Submit" class="form-button">
+                </form>
+                </div>
+
+                <div class="margin-default flex-2 padding-40 hidden-desktop">
+                    <h2 class="p-footer">Membership</h2>
+                    <p class="p-footer">Bike Edmonton has over 1700 paid members. Join or renew today and be a part of the growing community in Edmonton! <a href="Volunteer.html" class="link">Click here</a></p>
+                </div>
+            </div>
+            
+        </section>
+
+    <!--Mobile Footer-Nav Section-->
+        <section class="footer-div hidden-desktop">
+            <div class="padding-40 margin-default start-build">
+                <div>
+                    <div class="padding-bottom-left"><img src="images/Bike-edmonton-logo.svg"></div>
+                    <div><img class="socials"src="images/socials.svg"> </div>
+                </div>
+            </div>
+            
+        </section>
+        </section>
+            
     </footer>
 </body> 
 </html>
