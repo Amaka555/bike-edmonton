@@ -65,14 +65,14 @@ body {
     flex: 1;
     flex-basis: 100%;
     margin-right: 20px;
-    width: 100px;
+    width: 100%;
 }
 
 .flex-12 {
     flex: 2;     
     flex-basis: 100%;
     margin-right: 20px;
-    width: 100px;
+    width: 100%;
     margin-left: 20px;
 
 }
@@ -80,7 +80,7 @@ body {
 .flex-13 {
     flex: 3;
     flex-basis: 100%;
-    width: 100px;
+    width: 100%;
     margin-left: 20px;
 
 }
@@ -613,7 +613,7 @@ ul a {
         align-items: center;
         justify-content: space-between;
         margin: 24px 0;
-        background-color: peachpuff;
+        background-color:rgba(0, 32, 91, 1) ;
     }
 
     .mobile-nav1 {
@@ -621,7 +621,11 @@ ul a {
         display: flex;
         justify-content: space-between;
         margin: 24px 0;
-        background-color: peachpuff;
+        background-color: rgba(0, 32, 91, 1);
+    }
+
+    .mobile-head {
+        background-color:rgba(0, 32, 91, 1) ;
     }
     
     .start-build {
@@ -638,12 +642,17 @@ ul a {
 
     .mobile-hero{
         flex-direction: column;
+        width: 100%;
     }
 
     .mobile-width{
-     width:100;
+     width:100%;
     }
-
+    
+    .mobile-img-100 {
+    width: 100%;
+    padding-bottom: 30px;
+    }
     .mobile-subhead {
     width:100%;
     padding: 0px 0px 10px 0px;
@@ -657,20 +666,19 @@ ul a {
 
 .mobile-graphic-text {
     color: rgba(0, 0, 0, 0.10);
-    font-family: "EB Garamond";
-    font-size: 60px;
+    font-family: "roboto";
+    font-size: 30px;
     font-weight: 400px;
     font-style: normal;
     line-height: normal;
+    padding: 40px;
 }
-    #yama-logo {
-        margin-bottom: 0;
-    }
+
 }
 
 /* TABLET */
 
-@media screen and (max-width: 768px) and (min-width: 481px) {
+@media screen and (max-width: 769px)and (min-width: 481px) {
 body {
     background-color: plum;
     }
